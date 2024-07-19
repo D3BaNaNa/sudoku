@@ -14,3 +14,25 @@
   justify-content: center;
 
 }
+
+.menuButtons {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  width: 65vw;
+  height: 60vh;
+  left: 35vw;
+
+  align-items: center;
+  justify-content: space-evenly;
+
+
+}
+
+.supportButtons {
+
+  /* this is for smaller buttons */
+  display: flex
+
+}
