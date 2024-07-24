@@ -14,14 +14,14 @@ const Button = props => {
         fontFamily: "Times New Roman",
         fontSize: "48px",
         color: "black", // text color
-
-        // marginTop: "6px",
-        // marginBotton: "6px"
   
     }
 
     const handleClick = () => {
-        
+
+      // hard coded for now
+
+      
 
 
     }
@@ -31,7 +31,6 @@ const Button = props => {
         {props.text}
       </button>)
     
-    }
-  
-  export default Button;
-  
+  }
+
+export default Button;

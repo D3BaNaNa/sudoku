@@ -36,3 +36,28 @@
   display: flex
 
 }
+
+.link {
+  color:black;
+  text-decoration: none; 
+
+
+}
+
+.sudokuGrid {
+  display: flex;
+  height: calc(90vh);
+  width: calc(90vh);
+  right: 40vw;
+  margin: 0;
+  border-width: 0;
+  border-color: black;
+  flex-wrap: wrap;
+
+
+}
+
+.tile {
+  display: flex;
+
+}
