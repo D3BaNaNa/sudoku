@@ -1,4 +1,4 @@
-import {MainMenu, Game, Help} from "./Screens";
+import {MainMenu, Game, Help, Settings} from "./Screens";
 import { Route, Routes } from "react-router-dom";
 
 
@@ -11,6 +11,7 @@ function App() {
     <Route path="/" element={<MainMenu />} />
     <Route path="/game" element={<Game />} />
     <Route path="/help" element={<Help />} />
+    <Route path="/settings" element={<Settings />} />
   </Routes>
   
   );

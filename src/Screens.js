@@ -6,6 +6,8 @@ import SudokuLogo from "./assets/sudoku_logo.png";
 import Header from "./components/Header";
 import { Link } from "react-router-dom"
 import SudokuGrid from './components/SudokuGrid';
+import Timer from './components/Timer';
+import Menu from './components/Menu';
 
 // main menu display
 const MainMenu = () => {
@@ -37,7 +39,13 @@ const MainMenu = () => {
           New Game&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Link>}/>
         
-        <Button text="Settings"></Button>
+          <Button
+        text={<Link to="/settings" className="link">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Settings&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Link>}/>
+
 
         <Button
         text={<Link to="/help" className="link">
@@ -59,7 +67,10 @@ const Game = () => {
 
   return (
     <>
+
+      <Menu />
       <SudokuGrid />
+      <Timer />
 
     </>
     
@@ -122,5 +133,19 @@ const Help = () => {
 }
 
 
+const Settings = () => {
+  return (
+    <div className="settings">
+      <h1>Settings</h1>
 
-export {MainMenu, Game, Help}
+    </div>
+
+
+  )
+
+
+}
+
+
+
+export {MainMenu, Game, Help, Settings}

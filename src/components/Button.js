@@ -11,7 +11,7 @@ const Button = props => {
         display: "table-cell",
         verticalAlign:"middle",
 
-        fontFamily: "Times New Roman",
+        fontFamily: "Proxima Nova",
         fontSize: "48px",
         color: "black", // text color
   

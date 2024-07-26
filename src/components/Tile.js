@@ -10,10 +10,12 @@ const Tile = props => {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        border: "1px solid black",
-        fontFamily: "Times New Roman",
+        border: "2px solid black",
+        boxSizing: "border-box",
+        fontFamily: "Proxima Nova",
         borderRight: "0px",
-        borderBottom: "0px"
+        borderBottom: "0px",
+        margin: "0"
 
     }
 

@@ -93,6 +93,8 @@ class Sudoku extends Grid {
     constructor(gridWidth, gridHeight, difficulty="easy") {
         super(gridWidth, gridHeight);
         this.difficulty = difficulty
+
+        this.emptyGrid()
     }
 
     getCell(num) { // WARNING: Might not work! <--------------------
@@ -110,8 +112,6 @@ class Sudoku extends Grid {
 
 
     }
-
-    editTile
 
     generateFilled() {
 
@@ -148,18 +148,18 @@ class Sudoku extends Grid {
 
         // switching out stuff that caused problems
 
-        for (const key of Object.keys(this.grid)) {
-            if (this.grid[key] === "") {
+        // for (const key of Object.keys(this.grid)) {
+        //     if (this.grid[key] === "") {
 
-                // finds which is less, the number of valid numbers
-                // in the row, or valid numbers in the column
-                let lesser = minIndex(new Set(this.getRow(key[0])).length, 
-                new Set (this.getRow(key[2])).length)
+        //         // finds which is less, the number of valid numbers
+        //         // in the row, or valid numbers in the column
+        //         let lesser = minIndex(new Set(this.getRow(key[0])).length, 
+        //         new Set (this.getRow(key[2])).length)
 
-            }
+        //     }
 
 
-        }
+        // }
 
     
     }
@@ -239,3 +239,4 @@ console.log(test.grid)
 // }
 // console.log(bigNum/100);
 
+export default Sudoku;

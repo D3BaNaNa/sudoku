@@ -48,7 +48,7 @@
   display: flex;
   height: calc(90vh);
   width: calc(90vh);
-  right: 40vw;
+  left: 40vw;
   margin: 0;
   border-width: 0;
   border-color: black;
@@ -57,7 +57,97 @@
 
 }
 
+.timer {
+  display: flex;
+  height: calc(90vh);
+  width: calc(100vw - calc(20vw + calc(90vh)));
+  right: calc(40vw + 90vh);
+  margin: 0;
+  justify-content: center;
+
+
+}
+
 .tile {
   display: flex;
+
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('assets/fonts/Proxima Nova Font.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.settings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.menuButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  border: 2px solid black;
+  border-radius: 1vw;
+  width: 4vw;
+  height: 4vw;
+  margin: 2vw;
+
+}
+
+#menuLine {
+  margin: 0;
+  text-align: center;
+  vertical-align: center;
+
+}
+
+.gameLeft {
+  display: flex;
+  width: 20vw;
+  height: 100vh;
+
+
+}
+
+.openMenu {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  border-right: 2px solid black;
+  border-color: black;
+  width: 15vw;
+  cursor: pointer;
+
+}
+
+#subMenuLink {
+  font-size: 2.5em;
+  line-height: 1.5em;
+  width: max-content;
+
+}
+
+#subMenuLink:hover {
+  color: cornflowerblue;
+
+}
+
+#closeMenu {
+  font-size: 3em;
+  margin: 0;
+  align-self: flex-end;
+  cursor: pointer;
+
+}
+
+#closeMenu:hover {
+  color: crimson;
 
 }
